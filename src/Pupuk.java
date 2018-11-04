@@ -10,7 +10,7 @@
  */
 public class Pupuk extends Padi{
     
-private int berat;
+private int berat = 500;
 private  String jenisPupuk;
 
     public Pupuk(int berat, String jenisPupuk, String jenisPadi, int umurPadi) {
@@ -35,8 +35,8 @@ private  String jenisPupuk;
         this.jenisPupuk = jenisPupuk;
     } 
 
-    public void hitungPupuk(){
-        System.out.println("hasil tampil " + berat + this.getUmurPadi());
+    public int hitungPupuk(){
+        return this.getUmurPadi() * berat;
     }
 
 }
