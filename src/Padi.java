@@ -9,5 +9,8 @@
  * @author rivaldz
  */
 public class Padi {
-    
+ private String jenisPadi;   
+ private int umurPadi;
+ 
+ 
 }
