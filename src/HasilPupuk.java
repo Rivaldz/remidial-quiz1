@@ -16,7 +16,8 @@ public class HasilPupuk {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Pupuk ppk = new Pupuk(5, "Urea", "chiherang", 2);
+        Padi pd = new Padi("Ciherang", 2);
+        
         
         
     }
