@@ -11,7 +11,8 @@
 public class Padi {
  private String jenisPadi;   
  private int umurPadi;
-
+ 
+ 
     public Padi(String jenisPadi, int umurPadi) {
         this.jenisPadi = jenisPadi;
         this.umurPadi = umurPadi;
@@ -31,6 +32,6 @@ public class Padi {
 
     public void setUmurPadi(int umurPadi) {
         this.umurPadi = umurPadi;
-    }
-  
+    }        
+    
 }
