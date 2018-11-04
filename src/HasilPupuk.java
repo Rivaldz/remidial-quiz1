@@ -19,16 +19,22 @@ public class HasilPupuk {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Masukan berat = (gram)");
-        int berat = input.nextInt();
-        System.out.println("Masukan jenis pupuk = ");
-        String jp = input.next();
-        System.out.println("Masukan jenis Padi = ");
-        String jP = input.next();
-        System.out.println("Masukan umur padi  = ");
-        int umur = input.nextInt();
-        Pupuk pupuk = new Pupuk(berat,jp, jP, umur);
-        pupuk.tampilan();
+//        System.out.print("Masukan berat (gram) = ");
+//        //int berat = input.nextInt();
+//        System.out.println("Masukan jenis pupuk = ");
+//        //String jp = input.next();
+//        System.out.println("Masukan jenis Padi = ");
+//        //String jP = input.next();
+//        System.out.println("Masukan umur padi(hari)  = ");
+//        //int umur = input.nextInt();
+        Padi padi = new Padi("jenis padi", 12);
+        Pupuk pupuk = new Pupuk(10, "Hayo");
+        Hitung htg = new Hitung(padi, pupuk);
+        
+        System.out.println("Berat pupuk" + pupuk.getBerat());
+        System.out.println("hitung " + htg.hitung());
+            
+    
            
     }
     
