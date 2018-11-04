@@ -8,19 +8,21 @@
  *
  * @author rivaldz
  */
-public class Pupuk extends Padi{
+public class Pupuk{
     
-private int berat = 500;
+private int berat ;
 private  String jenisPupuk;
 
-    public Pupuk(int berat, String jenisPupuk, String jenisPadi, int umurPadi) {
-        super(jenisPadi, umurPadi);
+
+
+    public Pupuk(int berat, String jenisPupuk) {
+        
         this.berat = berat;
         this.jenisPupuk = jenisPupuk;
     }
 
     public int getBerat() {
-        return berat;
+        return berat ;
     }
 
     public void setBerat(int berat) {
@@ -33,17 +35,7 @@ private  String jenisPupuk;
 
     public void setJenisPupuk(String jenisPupuk) {
         this.jenisPupuk = jenisPupuk;
-    } 
-
-    public int hitungPupuk(){
-        return this.getUmurPadi() * berat;
-    }
-    public void tampilan(){
-        System.out.println("Jenis Pupuk = " + jenisPupuk);
-        System.out.println("Jenis Padi = " + this.getJenisPadi());
-        System.out.println("Umur padi = " + this.getUmurPadi());
-        System.out.println("Pupuk yang harus di gunakan " + hitungPupuk() + "gram");
-    }
+   }
 
 }
 
