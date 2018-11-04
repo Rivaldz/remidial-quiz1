@@ -19,6 +19,13 @@ private  String jenisPupuk;
         this.jenisPupuk = jenisPupuk;
     }
 
+    public Pupuk(String jenisPadi, int umurPadi) {
+        super(jenisPadi, umurPadi);
+    }
+
+    
+    
+
     public int getBerat() {
         return berat;
     }
@@ -33,11 +40,11 @@ private  String jenisPupuk;
 
     public void setJenisPupuk(String jenisPupuk) {
         this.jenisPupuk = jenisPupuk;
+    } 
+
+    public void hitungPupuk(int berat, int umurPadi){
+        System.out.println("hasil tampil " + berat + umurPadi);
     }
-
-    
-
-
 
 }
 
