@@ -38,6 +38,12 @@ private  String jenisPupuk;
     public int hitungPupuk(){
         return this.getUmurPadi() * berat;
     }
+    public void tampilan(){
+        System.out.println("Jenis Pupuk = " + jenisPupuk);
+        System.out.println("Jenis Padi = " + this.getJenisPadi());
+        System.out.println("Umur padi = " + this.getUmurPadi());
+        System.out.println("Pupuk yang harus di gunakan " + hitungPupuk() + "gram");
+    }
 
 }
 
